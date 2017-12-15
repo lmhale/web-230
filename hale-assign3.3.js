@@ -1,4 +1,3 @@
-
 var header = require('../header.js');
 
 console.log(header.display("Lauren", "Hale","Exercise 3.3"));
@@ -22,3 +21,4 @@ switch(eventKeyCode) {
     console.log("Unrecognized key press"); 
 }
     console.log(eventKeyCode);
+
