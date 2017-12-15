@@ -1,74 +1,24 @@
+
 var header = require('../header.js');
 
 console.log(header.display("Lauren", "Hale","Exercise 3.3"));
 
-var truck = 7;
-var car = 4;
-var bikeOne = 2;
-var bikeTwo = 8;
-var bikeThree = 4;
-var bikeFour = 6;
+var eventKeyCode = 13;
 
-function match(x,y){
-if (x == y) {
-    console.log(true);
-} else {
-    console.log(false);
+switch(eventKeyCode) {
+    case 13:
+    console.log("The enter key was pressed");
+    break;
+    case 16:
+    console.log("The shift key was pressed")
+    break;
+    case 32:
+    console.log("The spacebar key was pressed")
+    break;
+    case 8:
+    console.log("The backspace / delete key was pressed");
+    break;
+    case null:
+    console.log("Unrecognized key press"); 
 }
-
-}
-console.log(match(car,bikeThree));
-console.log(match(truck,car));
-
-function logMismatch(a,b) {
-if (a!=b)
-    console.log("Truck and car do not match!");
-}
-console.log(logMismatch(truck,car));
-
-function logMatch (c,d) {
-if(c == d) {
-    console.log( "Bike and Bike do match!");
-  
-}
-}
-
-
-if (truck == car) {
-    logMatch();
-} else {
-    logMismatch();
-    
-}
-
-
-if (car < bikeFour) {
-    logMatch();
-}else {
-    logMismatch();
-} 
-
-if (bikeThree > bikeFour) {
-    logMatch();
-}else {
-    logMismatch();
-} 
-
-if (bikeTwo =! bikeOne) {
-    logMatch();
-} else {
-    logMismatch();
-}
-
-
-if (truck < bikeOne) {
-    logMismatch();
-} else {
-    logMatch();
-}
-
-if (bikeThree < bikeTwo) {
-    logMatch();
-}else {
-    logMismatch ();
-}
+    console.log(eventKeyCode);
